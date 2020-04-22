@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width">
+    <title>Exercicio-3</title>
+    <link rel="stylesheet" type="text/css" href= "style.css"/>
+    </head>
+    <body>
+        <fieldset>
+            <h1>Gerador de numeros da Loteria</h1>
+           
+              <section>
+                <label for="Numero1">Numero 1°</label>
+                <input type="text" id="sort1" name="primeiroNumero"><br>
+                <br>
+                <label for="Numero2">Numero 2°</label>
+                <input type="text" id="sort2" name="segundoNumero"><br>
+                <br>
+                <label for="Numero3">Numero 3°</label>
+                <input type="text" id="sort3" name="terceiroNumero"><br>
+<br>
+                <label for="Numero4">Numero 4°</label>
+                <input type="text" id="sort4" name="quartoNumero"><br>
+<br>
+                <label for="Numero5">Numero 5°</label>
+                <input type="text" id="sort5" name="quintoNumero"><br>
+    <br>            
+                <label for="Numero6">Numero 6°</label>
+                <input type="text" id="sort6" name="sextoNumero"><br>
+               <b> <br>
+                <label for="resultado">Resultado</label>
+                <input type="text" id="resultado"/>
+
+                <input type="button" onclick="sorteio()" value="Gerar Números" id="btn">
+
+                <br>
+                <script>
+                    function sorteio(){
+
+                    var sorte1 = Math.round(Math.random()*60);
+                    var sorte2 = Math.round(Math.random()*60);
+                    var sorte3 = Math.round(Math.random()*60);
+                    var sorte4 = Math.round(Math.random()*60);
+                    var sorte5 = Math.round(Math.random()*60);
+                    var sorte6 = Math.round(Math.random()*60);
+
+                    var resultado = document.getElementById('resultado');
+                    resultado.value = (sorte1);
+
+                    
+
+                    }
+                </script>
+                
+            </section> 
+            
+
+            <br><hr>
+
+            <a href="exercicio-1.html">Tela Inicial</a> 
+
+        </fieldset>
+        
+    </body>
+</html>
